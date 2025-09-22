@@ -1,12 +1,15 @@
 import { Routes } from '@angular/router';
-    import { CounterPageComponent } from './components/counter/counter-page.component';
+import { CounterPageComponent } from './components/counter/counter-page.component';
+import { UsuarioComponent } from './usuario/usuario.component';
 
-
-    export const routes: Routes = [
-    {
-         path: 'counter', component: CounterPageComponent
-    },
-    {
-         path: '', redirectTo: 'counter', pathMatch: 'full' 
-    }
-    ];
+export const routes: Routes = [
+  {
+    path: 'counter', component: CounterPageComponent
+  },
+  {
+    path: 'usuario', component: UsuarioComponent
+  },
+  {
+    path: '', redirectTo: 'usuario', pathMatch: 'full' 
+  }
+];
